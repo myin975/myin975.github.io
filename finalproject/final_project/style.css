@@ -12,11 +12,13 @@ body, header, nav, main, footer, img, h1 {
     border: 0;  
 }  
  
-/*Style rule for images */ 
+/* Style rule for images */  
 
 img { 
-    max-width: 100%; 
-    display: block; 
+    max-width: 100%;  
+    display: block;   
+    float: right; 
+    border: 8px solid lightsteelblue;
 }  
 
 .hero-wrapper{   
@@ -106,15 +108,112 @@ main p{
 /* Styles for Contact Map */ 
 
 .map{
-    border: 8px solid cyan;
+    border: 8px solid lightsteelblue;
 } 
 
-/* Styles for footer content */ 
+/* Styles for footer content */  
+
+footer{
+    text-align: center; 
+}
  
 footer a {
-    color: #c0caf7; 
-    text-decoration: none;
+    color: blue; 
+    text-decoration: none; 
+    text-align: center;
 }
+
+/* Media Query for Tablet Viewport */ 
+
+@media screen and (min-width: 550px), print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */ 
+
+    .tab-desk{
+        display: block;
+    } 
+
+    .mobile{
+        display: none; 
+    } 
+
+    /* Tablet Viewport: Style rule for header content */ 
+
+    span.tab-desk{ 
+        display: inline;
+    }  
+
+    /* Tablet Viewport: Style rules for nav area. */ 
+
+    nav li{
+        border-top: none; 
+        display: inline-block;
+        font-size: 1.5em;  
+        border-right: 1px solid  rgb(204, 227, 243);
+        padding-top: 0.25em; 
+        padding-bottom: 0.25em; 
+        padding-left: 0.5em; 
+        padding-right: 0.5em;
+    }   
+
+    nav li:last-child{ 
+        border:none;
+    }
+
+    /* Tablet Viewport: Style rules for main area. */   
+
+    body{
+        background: radial-gradient(rgb(92, 154, 175), lightsteelblue);
+    } 
+}
+
+/* Media Query for Desktop Viewport */ 
+
+@media screen and (min-width: 769px), print {  
+} 
+
+/* Desktop Viewport: Style rule for header. */ 
+
+header{
+    padding: 2%; 
+} 
+
+/* Desktop Viewport: Style rules for nav area. */ 
+
+nav li a{
+    padding-top: 0.5em; 
+    padding-bottom: 0.5em; 
+    padding-left: 1.5em; 
+    padding-right: 1.5em; 
+} 
+
+nav li a:hover{  
+    color: rgb(92, 154, 175); 
+    background-color: lightsteelblue;
+}  
+
+/* Desktop Viewport: Style rules for main content. */ 
+
+#info ul{
+    margin-left: 5%; 
+} 
+
+main h3{
+    font-size: 5%; 
+}  
+
+body{
+    background: radial-gradient(rgb(92, 154, 175), lightsteelblue);
+} 
+
+/* Media Query for Print */ 
+
+body{
+    background-color: #fff; 
+    color: #000;
+} 
+
+
 
 
 
