@@ -1,0 +1,196 @@
+/* 
+File Name: styles.css 
+*/ 
+
+/* CSS Reset */ 
+
+body, header, nav, main, footer, img, h1 { 
+    margin: 0;  
+    padding: 0; 
+    border: 0;  
+}  
+ 
+/*Style rule for images */ 
+
+img { 
+    max-width: 100%; 
+    display: block; 
+}  
+
+/*Style Rules for Header */   
+
+header{ 
+    text-align: left; 
+    font-size: 3em; 
+    color:rgb(32, 182, 107);  
+    background-color: rgb(204, 227, 243);
+} 
+
+header h1{ 
+    font-style: normal; 
+    font-weight: bolder; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    color:rgb(49, 140, 201);  
+}  
+
+/* Styles for Nav Area */ 
+
+nav {   
+    background-color: lightblue;
+} 
+
+nav ul{ 
+    list-style-type:none;  
+    margin: 0; 
+    text-align:center;  
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    color: rgb(32, 182, 107);
+} 
+
+nav li{ 
+    display: inline-block; 
+    font-size: 2em; 
+} 
+
+nav li a{ 
+    display:block; 
+    color:rgb(49, 140, 201); 
+    text-align: center;  
+    padding: 0.5em 1em; 
+    text-decoration: none;
+} 
+
+/* Styles for Main Area */   
+
+main{ 
+    padding: 2%;  
+    background-color: rgb(204, 227, 243);
+    overflow: auto; 
+    font-family: Arial, Helvetica, sans-serif;  
+}  
+
+th,td{
+    border: 1px solid; 
+    text-align: left;
+} 
+
+/* Styles for footer content */  
+
+footer{ 
+    display: block;
+    color: #000;  
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(204, 227, 243)  
+}
+ 
+footer a {
+    color: #0077ff;  
+    text-decoration: none;   
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+/* Media Query for Tablet Viewport */ 
+
+@media screen and (min-width: 550px), print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */ 
+
+    .tab-desk{
+        display: block;
+    } 
+
+    .mobile{
+        display: none; 
+    } 
+
+    /* Tablet Viewport: Style rule for header content */ 
+
+    span.tab-desk{ 
+        display: inline;
+    }  
+
+    /* Tablet Viewport: Style rules for nav area. */ 
+
+    nav li{
+        border-top: none; 
+        display: inline-block;
+        font-size: 1.5em;  
+        border-right: 1px solid  rgb(204, 227, 243);
+        padding-top: 0.25em; 
+        padding-bottom: 0.25em; 
+        padding-left: 0.5em; 
+        padding-right: 0.5em;
+    }   
+
+    nav li:last-child{ 
+        border:none;
+    }
+
+    /* Tablet Viewport: Style rules for main area. */   
+
+    body{
+        background: radial-gradient(rgb(92, 154, 175), lightsteelblue);
+    } 
+}
+
+/* Media Query for Desktop Viewport */ 
+
+@media screen and (min-width: 769px), print {  
+} 
+
+/* Desktop Viewport: Style rule for header. */ 
+
+header{
+    padding: 2%; 
+} 
+
+/* Desktop Viewport: Style rules for nav area. */ 
+
+nav li a{
+    padding-top: 0.5em; 
+    padding-bottom: 0.5em; 
+    padding-left: 1.5em; 
+    padding-right: 1.5em; 
+} 
+
+nav li a:hover{  
+    color: rgb(92, 154, 175); 
+    background-color: lightsteelblue;
+}  
+
+/* Desktop Viewport: Style rules for main content. */ 
+
+#info ul{
+    margin-left: 5%; 
+} 
+
+main h3{
+    font-size: 5%; 
+}  
+
+body{
+    background: radial-gradient(rgb(92, 154, 175), lightsteelblue);
+} 
+
+/* Media Query for Print */ 
+
+body{
+    background-color: #fff; 
+    color: #000;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
