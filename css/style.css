@@ -16,7 +16,7 @@ img {
 }  
 
 .hero-wrapper{   
-    background: url(../images/laptop-wit-code.jpg); 
+    background: url(./laptop-wit-code.jpg); 
     background-repeat: no-repeat; 
     background-position: center;
     background-size:contain;
