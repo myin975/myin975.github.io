@@ -45,7 +45,7 @@ header h3{
     font-family: Arial, Helvetica, sans-serif; 
     text-align: left; 
     color: #000; 
-    font-size: 2em;
+    font-size: large;
 } 
 
 /* Styles for Nav Area */ 
@@ -87,7 +87,7 @@ main{
 main p{
     color:black; 
     font-weight: bold; 
-    font-size: 1em;
+    font-size: small;
 } 
 
 /* Styles for Contact Map */ 
