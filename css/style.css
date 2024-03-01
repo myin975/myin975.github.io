@@ -94,8 +94,14 @@ main h3{
     font-family: Arial, Helvetica, sans-serif; 
     text-align: left; 
     color: #000; 
-}
+} 
 
+.column{ 
+    width: 45%;
+    float: left; 
+    height: auto;
+    margin: auto;  
+}
 /* Styles for Contact Map */ 
 
 .map{
