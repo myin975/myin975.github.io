@@ -35,8 +35,14 @@ header h1{
     font-style: normal; 
     font-weight: bold; 
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center; 
-    color:black;
+    text-align: center;  
+    color: #528aae; 
+    text-shadow: 
+    -1px -1px 0 whitesmoke,
+      1px -1px 0 whitesmoke,
+     -1px 1px 0 whitesmoke,
+      1px 1px 0 whitesmoke,
+     -2px -5px 0px lightblue;
 }  
 
 header h3{
