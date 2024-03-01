@@ -95,7 +95,16 @@ main h3{
     font-family: Arial, Helvetica, sans-serif; 
     text-align: left; 
     color: #000; 
+}  
+
+table, tr, th{ 
+    border: 1px whitesmoke; 
+    border-collapse: collapse;
 } 
+
+tr, th{
+    background-color: lightblue;
+}
 
 .column{ 
     width: 45%;
