@@ -87,7 +87,6 @@ main{
 main p{
     color:black; 
     font-weight: bold; 
-    font-size: small;
 }  
 
 main h3{
@@ -95,7 +94,6 @@ main h3{
     font-family: Arial, Helvetica, sans-serif; 
     text-align: left; 
     color: #000; 
-    font-size: large;
 }
 
 /* Styles for Contact Map */ 
@@ -190,10 +188,6 @@ nav li a:hover{
 #info ul{
     margin-left: 5%; 
 } 
-
-main h3{
-    font-size: 2em; 
-}  
 
 body{
     background: radial-gradient(rgb(92, 154, 175), lightsteelblue);
