@@ -288,14 +288,6 @@ footer a {
         display: block;
     } 
 
-    .mobile{
-        display: none; 
-    }  
-
-    .hamburger{
-        display: none;
-    }
-
     /* Tablet Viewport: Style rule for header content */ 
 
     span.tab-desk{ 
