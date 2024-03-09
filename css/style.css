@@ -1,40 +1,33 @@
-/* CSS Reset */ 
+/*
+Author: Myles Yin Choy 
+File Name: css.style.css 
+Date: 03/08/24 (updated) 
+*/
 
-body, header, nav, main, footer, img, h1 { 
-    margin: 0;  
-    padding: 0; 
-    border: 0;  
-}  
- 
-/* Style rule for images */  
+body{
+    margin: 0;
+}
 
-img { 
-    max-width: 100%;  
-    display: block;   
-    border: 8px solid lightsteelblue;
-}   
-
-/* Style rule for mobile viewport */ 
-
-
-/*Style Rules for Header */   
-
-header{ 
-    text-align: center; 
-    font-size: 3em; 
-    color:black; 
-    background-image: url(images/laptop-wit-code.jpg); 
-    background-position: center; 
-    background-size: cover; 
-    background-repeat: no-repeat, repeat; 
+header{
+    background-image: url(../images/laptop-wit-code.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
     text-align: center;
-} 
+}
+
+/* 
+body{margin: 0;} 
+header{background-color: #528aae; text-align: center;} 
+main{text-align: left;}  
+nav{text-align: center;} 
+footer{text-align: center;} 
+*/
 
 header h1{ 
     font-style: normal; 
     font-weight: bold; 
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;  
     color: #528aae; 
     text-shadow: 
     -1px -1px 0 whitesmoke,
@@ -42,336 +35,276 @@ header h1{
      -1px 1px 0 whitesmoke,
       1px 1px 0 whitesmoke,
      -2px -5px 0px lightblue;
-}  
+}
 
-header h3{
-    font-style: italic; 
-    font-family: Arial, Helvetica, sans-serif; 
-    text-align: left; 
-    color: #000; 
-    font-size: large;
-} 
+.header_text{
+    padding-bottom: 25px;
+}
 
-/* Styles for Nav Area */ 
+.s_name{
+    margin-bottom: 0;
+    line-height: 150px;
+    letter-spacing: 3px;
+    font-size: 7em;
+}
 
-nav {   
-    background-color: lightblue;
-} 
-
-nav ul{ 
-    list-style-type:none;  
-    margin: 0; 
-    text-align: center; 
+.s_tag{
+    margin-top: -25px;
+    letter-spacing: 2px;
+    font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-} 
+    color: #528aae; 
+    text-shadow: 1px 2px 0px lightblue;
+}
 
-nav li{ 
-    display: inline-block; 
+/* Create Dropdown Buttons */ 
+
+	.topnav-child {
+		display: none;
+        background-color: gray;
+	}
+	
+	.topnav-child a {
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+    }
+    
+
+/* 
+.s_name{ 
+    margin-bottom: 0; 
+    line-height: 150px;  
+    letter-spacing: 3px; 
     font-size: 2em; 
     font-family: Arial, Helvetica, sans-serif;
 } 
 
-nav li a{ 
-    display:block; 
-    color:aliceblue; 
-    text-align: center; 
-    padding: 0.5em 1em; 
-    text-decoration: none;
+.s_tag{ 
+    margin-top: -25px; 
+    letter-spacing: 2px; 
+    font-size: 1.2em;  
+    font-family: Arial, Helvetica, sans-serif; 
+    color: lightblue;
 } 
+*/
 
-.logo{
-    font-size: 1.5rem; 
+/* Nav Area */
+.nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+ 
+.nav li{list-style: none; display: inline;}
+
+.logo {
+    font-size: 1.5rem;
+    color: rgb(233, 233, 242);
     padding-left: 20px;
-} 
-
-.logospan{
-    font-size: 2rem;
-} 
-
-.mobile-nav a { 
-    color: #fff;
-    text-align: center; 
-    font-size: 2em;
-    text-decoration: none; 
-    padding: 3%; 
-    display: block;
-} 
-
-.mobile-nav a.menu-icon{
-    display: block; 
-    position: absolute;
-    right: 0;
-    top: 0;
-} 
-
-.menu-icon div{
-    height: 50px; 
-    width: 50px; 
-    background-color: #373684;
-} 
-
-.hamburger{ 
-    padding-right: 20px; 
-    cursor: pointer;
 }
 
+.logo span{
+    font-size: 2rem;
+    color: rgb(201, 201, 220);
+} 
+  
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+  
 .hamburger .line {
     display: block;
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
     /* background-color: rgb(160, 185, 250); */
-    background-color: whitesmoke; 
-} 
-
-.hide{
-    display: none;
-}  
-
-.nav__link{
-    position: absolute;
-    width: 100vw; 
-    top: 5rem; 
+    background-color: whitesmoke;
+}
+  
+.nav__link {
+    position: fixed;
+    width: 100vw;
+    top: 5rem;
     left: 18px;
-    background-color: #373684;
-} 
+    background-color: rgb(8, 69, 223);
+}
+  
+.nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: lightblue;
+}
+  
+.nav__link a:hover {
+    color: rgb(251, 246, 246);
+}
+  
+.hide {
+    display: none;
+}
 
-/* Style rules for Drop Down Menu */ 
+/* Drop Down */  
 
 .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .nav a:hover, .dropdown:hover .dropbtn {
-    color: #f9f9f9;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Dropdown */
+  float: left;
+  overflow: hidden;
+}
 
-  .dropdown {
-            position: relative;
-            display: inline-block;
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nav a:hover, .dropdown:hover .dropbtn {
+  color: #f9f9f9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown */
+
+.dropdown {
+          position: relative;
+          display: inline-block;
+}
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+   
+
+
+        .theTable h2{text-align: center;}    
+        table{
+                margin-left: auto;
+                margin-right: auto;
+        }
+        .tableSplit{width: 100px;}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
   }
   
-          .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
-  
-          .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-          }
-  
-          .dropdown-content a:hover {background-color: #ddd;}
-  
-          .dropdown:hover .dropdown-content {display: block;}
-  
-          .dropdown:hover .dropbtn {background-color: #3e8e41;}
-     
+  }
   
   
-          .theTable h2{text-align: center;}    
-          table{
-                  margin-left: auto;
-                  margin-right: auto;
-          }
-          .tableSplit{width: 100px;}
+  
+  /* Desktop */
+    @media screen and (min-width: 850px) {
+      .nav__link {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+      }
     
-/* Styles for Main Area */  
-
-main{ 
-    padding: 2%;  
-    background-color: whitesmoke; 
-    overflow: auto; 
-    font-family: Arial, Helvetica, sans-serif; 
-} 
-
-main p{
-    color:black; 
-    font-weight: bold;  
-    font-size: 1.17em;
-}  
-
-main h3{
-    font-style: italic;  
-    font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif; 
-    text-align: left; 
-    color: #000; 
-}  
-
-table, tr, th{ 
-    border: 1px whitesmoke; 
-    border-collapse: collapse;
-} 
-
-tr, th{
-    background-color: lightblue;
-}
-
-.column{ 
-    width: 45%;
-    float: left; 
-    height: auto;
-    margin: auto;  
-}
-/* Styles for Contact Map */ 
-
-.map{
-    border: 8px solid lightsteelblue;
-} 
-
-/* Styles for footer content */  
-
-footer{
-    text-align: center; 
-}
- 
-footer a {
-    color: blue; 
-    font-family: Arial, Helvetica, sans-serif; 
-    text-align: center;
-}
-
-/* Media Query for Tablet Viewport */ 
-
-@media screen and (min-width: 550px), print {
-
-    /* Tablet Viewport: Show tab-desk class, hide mobile class */ 
-
-    .tab-desk{
-        display: block;
-    } 
-
-    /* Tablet Viewport: Style rule for header content */ 
-
-    span.tab-desk{ 
-        display: inline;
-    }  
-
-    /* Tablet Viewport: Style rules for nav area. */ 
-
-    nav li{
-        border-top: none; 
+      .nav__link a {
         display: inline-block;
-        font-size: 1.5em;  
-        border-right: 1px solid  rgb(204, 227, 243);
-        padding-top: 0.25em; 
-        padding-bottom: 0.25em; 
-        padding-left: 0.5em; 
-        padding-right: 0.5em;
-    }   
-
-    nav li:last-child{ 
-        border:none;
+        padding: 15px 20px;
+      }
+    
+      .hamburger {
+        display: none;
+      }
     }
-
-    /* Tablet Viewport: Style rules for main area. */   
-
-    body{
-        background: radial-gradient(rgb(92, 154, 175), lightsteelblue);
-    }  
-
-    .nav__link{
-        display: block;
-    }
+  
+@media all and (min-width: 50px) and (max-width: 480px){ 
+      /* body{
+          background-color: #3B5998;
+      } */
+      .header_text h1{
+        font-size: 25px;
+        color: lightskyblue;
+        text-shadow: 1px 1px 0 whitesmoke;
+      }
+      .header_text p{
+        font-size: 15px;
+        color: lightskyblue;
+        text-shadow: 1px 1px 0 whitesmoke;
+      }
+      
 }
-
-/* Media Query for Desktop Viewport */ 
-
-@media screen and (min-width: 769px), print {  
-} 
-
-/* Desktop Viewport: Style rule for header. */ 
-
-header{
-    padding: 2%; 
-} 
-
-/* Desktop Viewport: Style rules for nav area. */ 
-
-nav li a{
-    padding-top: 0.5em; 
-    padding-bottom: 0.5em; 
-    padding-left: 1.5em; 
-    padding-right: 1.5em; 
-} 
-
-nav li a:hover{  
-    color: rgb(92, 154, 175); 
-    background-color: lightsteelblue;
-}  
-
-/* Desktop Viewport: Style rules for main content. */ 
-
-#info ul{
-    margin-left: 5%; 
-} 
-
-body{
-    background: radial-gradient(rgb(92, 154, 175), lightsteelblue);
-} 
-
-/* Media Query for Print */ 
-
-body{
-    background-color: #fff; 
-    color: #000;
-}  
-
-.nav__link{
-    position: static;
+  
+@media all and (min-width: 481px) and (max-width: 768px){ 
+      /* body{
+          background-color: #3e8e41;
+      } */
+      .header_text h1{
+        font-size: 50px;
+        color: lightskyblue;
+      }
+  
+  
 }
-
-
-
-
-
-
-
-
+  
+@media all and (min-width: 769px) and (max-width: 1279px){ 
+      /* body{
+          background-color: #f1e615;
+      } */
+}
+  
+@media all and (min-width: 1280px) and (max-width: 1400px) { 
+      body{
+          background-color: #2f2e27;
+      }
+}
