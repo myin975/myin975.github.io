@@ -1,0 +1,212 @@
+/*
+Author: Myles Yin Choy 
+Date: 03/09/24 
+File Name: styles.css 
+*/
+
+/* CSS Reset */ 
+body, header, nav, main, footer, img, h1, h3, ul{
+    margin: 0; 
+    padding:0; 
+    border:0; 
+}  
+
+/* Header Styles */
+header{
+    background-color: #2a1f14;
+    background-position: center; 
+    background-size:cover; 
+    background-repeat: no-repeat, repeat; 
+    background-image: url(..//images/baby-hawk.webp);
+} 
+
+header a img{
+    margin: auto;
+}
+
+/* Style rules body and images */ 
+body{
+    background-color: #f6eee4;
+}
+
+img{
+    max-width: 100%; 
+    display: block;  
+    transform: scaleX(1.5);  
+    transform:translateX(50px); 
+}  
+
+/* Style Rules to show mobile class and hide tab-desk class */ 
+.mobile{
+    display: block;
+} 
+
+.tab-desk{
+    display: none;
+}
+
+/* Style rules for header area */ 
+h1{
+    padding: 2%; 
+    text-align: center; 
+    font-family: "Emblema One", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+    color: #f6eee4;
+} 
+
+h3{
+    padding: 2%; 
+    text-align: center; 
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    color: #f6eee4;
+}
+
+
+/* Style rules for nav */ 
+nav{
+    background-color: #2a1f14; 
+} 
+
+nav ul{
+    list-style-type: none;
+    text-align: center; 
+    color:#f6eee4;
+} 
+
+nav li{
+    display: block; 
+    font-size: 1.5em;
+    font-family: verdana, arial, sans-serif; 
+    font-weight: bold;  
+    border-top: 0.5px; 
+    border-style: solid; 
+    border-color: #f6eee4; 
+} 
+
+nav li a{
+    display: block;  
+    color: #f6eee4;
+    padding-top: 0.5em; 
+    padding-bottom: 0.5em; 
+    padding-left: 2em; 
+    padding-right: 2em; 
+    text-decoration: none;
+} 
+
+/* Style Rules for Main */ 
+main{ 
+    padding: 2%; 
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main p{
+    font-size: 1.25;
+} 
+ 
+main h3{ 
+    padding: 2%; 
+}
+
+main ul{
+    list-style-type: square;
+}
+
+.link{
+    color: #4d3319; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-style: italic;
+} 
+
+.action{ 
+    font-size: 1.75em; 
+    font-weight: bold; 
+    text-align: center;
+} 
+
+.round{
+    border-radius: 6px;
+} 
+
+#info ul{
+    margin-left: 10%;
+}
+
+#contact{
+    text-align: center;
+} 
+
+#tel-link{
+    background-color: #2a1f14; 
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+#tel-link a{
+    color: #f6eee4; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+/* Style Rules for Main */ 
+main{
+    padding: 2%; 
+    font-family: verdana, arial, sans-serif; 
+}
+
+main p{ 
+    font-size: 1.25em;
+}
+
+main h3{ 
+    padding-top: 2%;
+} 
+
+main ul{
+    list-style-type: square;
+} 
+
+.link{
+    color: #4d3319;
+    text-decoration: none; 
+    font-weight: bold; 
+    font-style: italic;
+} 
+
+.action{
+    font-size: 1.75em; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+#contact{
+    text-align: center;
+} 
+
+/* Style Rules for footer */ 
+footer{
+    text-align: center;
+    font-size: 0.85em; 
+    background-color: #2a1f14; 
+    color: #f6eee4; 
+    padding-top: 1%; 
+    padding-bottom: 1%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+footer a{ 
+    color: #f3e6d8; 
+    text-decoration: none;
+}

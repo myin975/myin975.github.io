@@ -3,7 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <title>Wild Rescues: Home Page</title>
 
 </head> 
@@ -11,17 +18,25 @@
 <body> 
 
     <header> 
-        <h1>&#128062; Wild Rescues</h1> 
-        <h3>Rescue. Rehabilitate. Release.</h3>
+        <div class="tab-desk"> 
+            <a href="index.html"><img src="./images/baby-hawk.webp" alt="rescued baby hawk"></a> 
+        </div> 
+
+        <div class="mobile">
+            <h1>&#128062; Wild Rescues</h1> 
+            <h3>Rescue. Rehabilitate. Release.</h3>
+        </div>
     </header> 
     
     <nav>
-        <p><a href="index.html">Home</a> &nbsp; &#9672; &nbsp;
-            <a href="./about.html">About Us</a> &nbsp; &#9672; &nbsp;
-            <a href="./partnership.html">Partnership</a> &nbsp; &#9672; &nbsp;
-            <a href="./gallery.html">Gallery</a> &nbsp; &#9672; &nbsp;
-            <a href="./faqs.html">FAQs</a> &nbsp; &#9672; &nbsp;
-            <a href="./contact.html">Contact</a> &nbsp; &#9672; &nbsp;</p>
+        <ul>
+            <a href="index.html">Home</a> 
+            <a href="./about.html">About Us</a> 
+            <a href="./partnership.html">Partnership</a> 
+            <a href="./gallery.html">Gallery</a> 
+            <a href="./faqs.html">FAQs</a> 
+            <a href="./contact.html">Contact</a>
+        </ul>
     </nav>
 
     <main>
@@ -38,8 +53,10 @@
         </div> 
 
         <div id="latest"> 
-            <h2>Our latest Rescue: Baby Raccoons,</h2> 
-            <img src="./images/baby-raccoons.jpg" alt="baby raccoons" height="251" width="201"> </a>  
+            <h2>Our latest Rescue: Baby Raccoons</h2> 
+                <div class="round">
+                    <img src="./images/baby-raccoons.jpg" alt="baby raccoons" class="round"></a> 
+                </div>  
             <p>Meet our latest rescues, Fizz, Bandit, and Mohawk. These three little guys were found abandoned near a home.</p>
 
         </div>
