@@ -33,7 +33,7 @@ main h3{
 table, tr, th{ 
   border: 1px whitesmoke; 
   border-collapse: collapse;
-} 
+}  
 
 tr, th{
   background-color: lightblue;
@@ -267,7 +267,39 @@ header h1{
                 margin-left: auto;
                 margin-right: auto;
         }
-        .tableSplit{width: 100px;}
+        .tableSplit{width: 100px;} 
+
+/*Main Area/* 
+/*Style rules for grid layout*/ 
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;  
+  grid-column-gap: 20px;
+  background-color: lightblue; 
+  border-collapse: collapse; 
+  border: 4px solid black;   
+  padding-left: 6px;
+}
+
+.grid-item_{
+  border: 5px solid black;  
+} 
+
+img{
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+figure{ 
+  max-width: 299px; 
+  max-height: 281px; 
+  display: block; 
+  margin: 2% auto; 
+  box-shadow: 6px 6px 10px lightslategray; 
+  border: 4px solid lightsteelblue; 
+  text-align: center;  
+  height: auto; 
+  float: left;
+} 
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
