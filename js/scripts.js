@@ -1,7 +1,11 @@
+//Global Varibles 
+var answer = document.querySelector("#answer p"); 
+var heading = document.querySelector("#answer h2");
+
 //Hamburger Menu Fuction 
 
 function Hamburger(){
-    var menu = document.getElementById("nav__link"); 
+    var menu = document.getElementById("nav__link");  
     if(menu.style.display === "block"){
         menu.style.display = "none";
     }   else{
