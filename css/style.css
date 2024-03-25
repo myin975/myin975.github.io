@@ -5,10 +5,8 @@ Date: 03/08/24 (updated)
 */
 
 /*CSS Reset*/
-body, header, nav, main, footer, img, h2, h3, ul, figure, figcaption, aside{
+body{
   margin: 0; 
-  padding: 0; 
-  border: 0;
 } 
 
 main{ 
@@ -332,7 +330,6 @@ form #submit {
 footer {
   text-align: center;
   font-size: 0.85em;
-  color: #fff;
   padding: 1% 0;
 }
 
