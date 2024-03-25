@@ -4,8 +4,11 @@ File Name: css.style.css
 Date: 03/08/24 (updated) 
 */
 
-body{
-    margin: 0;
+/*CSS Reset*/
+body, header, nav, main, footer, img, h2, h3, ul, figure, figcaption, aside{
+  margin: 0; 
+  padding: 0; 
+  border: 0;
 } 
 
 main{ 
@@ -36,12 +39,6 @@ main h3{
 }  
 
 nav{text-align: center;} 
-
-footer{
-  text-align: center; 
-  display: block;
-  background-color: whitesmoke; 
-} 
 
 header{
     background-image: url(../images/laptop-wit-code.jpg);
@@ -291,12 +288,11 @@ header h1{
 } 
 
 img{
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  max-width: 100%;
+  display: block;
 }
 figure{ 
-  max-width: 299px; 
-  max-height: 281px; 
+  max-width: 100%;  
   display: block; 
   margin: 2% auto; 
   box-shadow: 6px 6px 10px lightslategray; 
@@ -330,7 +326,15 @@ form #submit {
   font-size: 1em;
   color: #fff;
   border-radius: 10px;
-} 
+}  
+
+/*Style rules for footer content*/ 
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #fff;
+  padding: 1% 0;
+}
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
