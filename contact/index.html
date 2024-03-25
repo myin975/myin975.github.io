@@ -50,6 +50,43 @@
             <p>Find me at: 1234 Totally Real Address, Chicago, IL 60007</p> 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.45164646476!2d-88.06160894546771!3d41.83377339116232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1706409003181!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
         </div> 
+        <div id="form">
+            <h4>Fill out your information here to get in touch with me.</h4> 
+            <form class="form-grid"><!--Start form--> 
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName"> 
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lname"> 
+                    <label for="bName">Name of Business:</label> 
+                    <input type="text" name="bName" id="bName"> 
+                    <label for="email">Email:</label> 
+                    <input type="email" name="email" id="email">
+                    <label for="phone">Phone:</label> 
+                    <input type="tel" name="phone" id="phone">
+                </fieldset> 
+                <fieldset>
+                    <legend>Additional Information</legend> 
+                    <p>Would you like to learn me about:</p> 
+                    <label for="vol."> 
+                    <input type="radio" name="info" id="class" value="Class Assignments">Class Assignments
+                    </label> 
+                    <label for="vol.">
+                    <input type="radio" name="info" id="html" value="HTML">HTML
+                    <label for="css">
+                    <input type="radio" name="info" id="css" value="CSS">CSS
+                    </label> 
+                    <label for="other"> 
+                    <input type="radio" name="info" id="other" value="Other">Other, please specify below.
+                    </label> 
+                    <label for="questions">Do you have any questions for me?
+                    </label>  
+                    <textarea name="questions" rows="5" cols="35"></textarea>
+              </fieldset> 
+              <input type="submit" id="submit" value="Submit" class="btn">
+            </form>
+        </div>  
     </main> 
     <!--Footer Area--> 
     <footer> 
