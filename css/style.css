@@ -20,7 +20,12 @@ main p{
   color:black; 
   font-weight: bold;  
   font-size: 1.17em;
-}  
+}   
+
+main ul{
+  list-style-type: circle; 
+  margin-left: 12%;
+}
 
 main h3{
   font-style: italic;  
@@ -29,15 +34,6 @@ main h3{
   text-align: left; 
   color: #000; 
 }  
-
-table, tr, th{ 
-  border: 1px whitesmoke; 
-  border-collapse: collapse;
-}  
-
-tr, th{
-  background-color: lightblue;
-}
 
 nav{text-align: center;} 
 
@@ -258,7 +254,7 @@ header h1{
 
         .dropdown:hover .dropdown-content {display: block;}
 
-        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        .dropdown:hover .dropbtn {background-color: steelblue;}
    
 
 
@@ -301,6 +297,32 @@ figure{
   float: left;
 } 
 
+/*Style rules for form elements*/ 
+fieldset, input, select, textarea{
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 1%;
+}
+
+form #submit {
+  margin: 0 auto;
+  border: none;
+  display: block;
+  padding: 2%;
+  background-color: #5371a9;
+  font-size: 1em;
+  color: #fff;
+  border-radius: 10px;
+} 
+
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
@@ -313,8 +335,6 @@ figure{
   }
   
   }
-  
-  
   
   /* Desktop */
     @media screen and (min-width: 850px) {
