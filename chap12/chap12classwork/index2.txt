@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  
   <style>
   body {
     font: 20px Montserrat, sans-serif;
@@ -21,16 +21,16 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #181a19; /* Dark */
-    color: #ffffff;
+    background-color: gray; /* Gray */
+    color: whitesmoke;
   }
   .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
+    background-color: steelblue; /* Steel Blue */
+    color: whitesmoke;
   }
   .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
+    background-color: whitesmoke; /* White Smoke */
+    color: #555555; 
   }
   .bg-4 { 
     background-color: #2f2f2f; /* Black Gray */
@@ -52,7 +52,7 @@
   .navbar-brand span{color: #838080;}
   .navbar-brand span{color: #2f2f2f; font-size: larger; font-weight: 500;}
   .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: skyblue !important;
   }
   </style>
 </head>
@@ -67,7 +67,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><span>JS</span>CYBERCODE</a>
+      <a class="navbar-brand" href="/index.html"><span>Myles Yin Choy</span>Webdeveloper</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -75,26 +75,26 @@
           <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">CLASSES</a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Chap1</a></li>
-            <li><a class="dropdown-item" href="#">Chap2</a></li>
-            <li><a class="dropdown-item" href="#">Chap3</a></li>
-            <li><a class="dropdown-item" href="#">Chap4</a></li>
-            <li><a class="dropdown-item" href="#">Chap5</a></li>
-            <li><a class="dropdown-item" href="#">Chap6</a></li>
-            <li><a class="dropdown-item" href="#">Chap7</a></li>
-            <li><a class="dropdown-item" href="#">Chap8</a></li>
-            <li><a class="dropdown-item" href="#">Chap9</a></li>
-            <li><a class="dropdown-item" href="#">Chap10</a></li>
-            <li><a class="dropdown-item" href="#">Chap11</a></li>
-            <li><a class="dropdown-item" href="#">Chap12</a></li>
+            <li><a class="dropdown-item" href="/chap1/index.html" target="_blank">Chapter 1</a></li>
+            <li><a class="dropdown-item" href="/chap2/index.html" target="_blank">Chapter 2</a></li>
+            <li><a class="dropdown-item" href="/chap3/index.html" target="_blank">Chapter 3</a></li>
+            <li><a class="dropdown-item" href="/chap4/index.html" target="_blank">Chapter 4</a></li>
+            <li><a class="dropdown-item" href="/chap5/index.html" target="_blank">Chapter 5</a></li>
+            <li><a class="dropdown-item" href="/chap6/index.html" target="_blank">Chapter 6</a></li>
+            <li><a class="dropdown-item" href="/chap7/index.html" target="_blank">Chapter 7</a></li>
+            <li><a class="dropdown-item" href="/chap8/index.html" target="_blank">Chapter 8</a></li>
+            <li><a class="dropdown-item" href="/chap9/index.html" target="_blank">Chapter 9</a></li>
+            <li><a class="dropdown-item" href="/chap10/index.html" target="_blank">Chapter 10</a></li>
+            <li><a class="dropdown-item" href="/chap11/index.html" target="_blank">Chapter 11</a></li>
+            <li><a class="dropdown-item" href="/chap12/index.html" target="_blank">Chapter 12</a></li>
           </ul>
         </li>
 
 
 
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">WORK</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+        <li><a href="/contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -103,14 +103,14 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Who Am I?</h3>
-  <img src="./main_image1.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm your Instructor...</h3>
+  <img src="/images/Signature.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>Yin Choy, but you can call me Myles, webprogrammer, hobby artist.</h3>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <p>Computer Programming student learning webpage development using HTML 5, CSS, JavaScript, and Bootstrap. </p>
   <a href="#" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-search"></span> Search
   </a>
@@ -120,28 +120,40 @@
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">What have we done?</h3><br>
   <div class="row">
-    <div class="col-sm-4">
-      <p>HTML building blocks Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src=" " class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-4"> 
+      <p>Click the images below to see examples of my work.</p>
+      <p>Group class work that applies anchor links and CSS.</p>
+      <a href="https://myin975.github.io/delta/"><img src="/images/code.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
-      <p>Design for better user interface Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src=" " class="img-responsive margin" style="width:100%" alt="Image">
+      <p>Labs that I did that shows that I applied what I learned using JavaScript.</p>
+      <a href="https://myin975.github.io/chap9/faqs.html"><img src="/images/baby-raccoons.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
-      <p>Let's make it work for us.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src=" " class="img-responsive margin" style="width:100%" alt="Image">
+      <p>My first attempt at a webpage compared to what I can do now.</p>
+      <a href="../myfirstpage"><img src="/images/code2.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
   </div>
 </div>
 
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap: <a href="https://myin975.github.io/delta/">Class Group Project Example</a></p>  
-</footer>
-
+  <!-- Footer --> 
+  <footer id="footer">  
+    <div class="row"> 
+      <div class="column one">
+        <h2>Social Links</h2> 
+          <ul> 
+            <li><p>Facebook: <a href=""></a></p></li> 
+            <li><p>&copy; Copyright 2024, All Rights Reserved.</p> 
+              <p><a href="mailto:mylesyinchoy.net">mylesyinchoy.net</a></p></li>
+          </ul>
+      </div>
+    </div>
+    <footer class="container-fluid bg-4 text-center">
+      <p>&copy; Copyright 2024, All Rights Reserved.</p> 
+              <p><a href="mailto:mylesyinchoy.net">mylesyinchoy.net</a></p>
+  </footer>
+  <script src="js/scripts.js"></script> 
 </body>
 </html>
-
 
